@@ -6,7 +6,7 @@ pipeline {
       steps {
         checkout([$class: 'GitSCM',
           branches: [[name: '*/main']],
-          userRemoteConfigs: [[url: 'https://github.com/ICO-Tech/.git']]
+          userRemoteConfigs: [[url: 'https://github.com/ICO-Tech/Nodejs-app.git']]
         ])
       }
     }
@@ -30,3 +30,4 @@ pipeline {
     }
   }
 }
+
